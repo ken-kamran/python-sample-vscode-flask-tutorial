@@ -14,7 +14,13 @@ steps:
     versionSpec: '3.6'
     architecture: 'x64'
 
-   
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '08afba08-7f59-4166-b4ac-aed5e10cc2ac'
+    definition: '4'
+    buildVersionToDownload: 'latest'
+    targetPath: '$(Pipeline.Workspace)'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.SourcesDirectory)'
