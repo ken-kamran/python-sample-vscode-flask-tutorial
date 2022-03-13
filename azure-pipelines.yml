@@ -6,7 +6,7 @@ trigger:
 - master
 
 pool:
-  name: Hosted Ubuntu 1604
+  name: ubuntu-latest
 
 steps:
 - task: UsePythonVersion@0
