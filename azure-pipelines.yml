@@ -21,6 +21,7 @@ steps:
     definition: '4'
     buildVersionToDownload: 'latest'
     targetPath: '$(Pipeline.Workspace)'
+    
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.SourcesDirectory)'
