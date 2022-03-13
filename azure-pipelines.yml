@@ -1,6 +1,6 @@
 variables:
   ConnectedServiceName: 'azurerm'
-  WebAppName: 'pyweb'
+  WebAppName: 'pyweb345'
 
 trigger:
 - master
